@@ -1,0 +1,7 @@
+import { useRouter } from 'next/router'
+
+export default function Products() {
+    const router = useRouter()
+    console.log(router)
+    return <h1>{router.query.product}</h1>
+}

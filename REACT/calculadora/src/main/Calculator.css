@@ -1,0 +1,17 @@
+:root {
+    --bg-button: #565656;
+    --border-button: solid 1px #323232;
+}
+
+.calculator {
+    height: 450px;
+    width: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+
+    border: 10px solid var(--border-button) !important;
+
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 1fr 70px 70px 70px 70px 70px;    
+}

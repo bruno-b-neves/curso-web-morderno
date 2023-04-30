@@ -1,0 +1,22 @@
+<div class="center">
+    <mat-card class="card-form">
+        <mat-card-title>Excluir Produto</mat-card-title>
+        <form>
+            <mat-form-field class="flex-column">
+                <input matInput placeholder="Nome" [value]="product.name"  name="name">
+            </mat-form-field>
+            <mat-form-field class="flex-column">
+                <input matInput placeholder="Preço (R$)" [value]="product.price" name="price">
+            </mat-form-field>
+        </form>
+        <div class="display-buttons">
+            <button mat-raised-button (click)="deleteProduct()" color="warn">
+                Excluir
+            </button>
+            
+            <button mat-raised-button (click)="cancel()" class="button-yellow">
+                Cancelar
+            </button>
+        </div>
+    </mat-card>
+</div>

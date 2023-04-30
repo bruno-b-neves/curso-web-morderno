@@ -1,0 +1,84 @@
+<h1>PROJETO</h1>
+<div class="background-projeto">
+    <ul class="tree">
+        <li>
+            <button wm-folder class="btn">Beckend</button>
+            <ul>
+                <li>
+                    <button wm-folder class="btn-secondary">app</button>
+                    <ul>
+                        <li>produto.js</li>
+                        <li>usuario.js</li>
+                        <li>venda.js</li>
+                    </ul>
+                </li>
+                <li>
+                    <button wm-folder class="btn-secondary">config</button>
+                    <ul>
+                        <li>banco.js</li>
+                        <li>rotas.js</li>
+                        <li>servidor.js</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <button wm-folder class="btn">Frontend</button>
+            <ul>
+                <li>
+                    <button wm-folder class="btn-secondary">public</button>
+                    <ul>
+                        <li>app.css</li>
+                        <li>app.js</li>
+                        <li>index.html</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+</div>
+
+
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+<style>
+    .background-projeto {
+        width: 400px;
+        margin: auto;
+        padding: 20px 50px;
+        background-color: rgb(245, 245, 245);
+        box-shadow: 0px 6px 6px rgba(178, 178, 178, 0.5);
+    }
+    .btn {
+        margin: 5px 0px;
+        padding: 10px 45px;
+        background-color: #191970;
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: 1px solid #191970;
+        border-radius: 7px;
+        letter-spacing: .10rem;
+    }
+    .btn-secondary {
+        margin: 5px 0;
+        padding: 5px 15px;
+        background-color: #6495ED;
+        color: #fff;
+        font-size: .725rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: 1px solid #6495ED;
+        border-radius: 7px;
+        letter-spacing: .0.05rem;
+    }
+</style>
+<script>
+    document.querySelectorAll('[wm-folder]').forEach(folder => {
+        folder.onclick = function (e) {
+            const ul = folder.nextElementSibling
+            const d = ul.style.display
+            ul.style.display = d === 'none' ? 'block' : 'none'
+        }
+    })
+</script>

@@ -1,0 +1,70 @@
+[ PROTOCOLO HTTP ]...
+- HTTP = (H)YPER | (T)EXT | (T)RANSFER | (P)ROTOCOL
+____________________________________________________________________________________________________________________
+
+(CARACTERISTICAS)...
+- CAMADA DE APLICAÇÃO
+- STATELESS
+- CLIENTE-SERVIDOR
+- TCP/IP
+- HTML, CSS, JS, MÍDIAS...
+____________________________________________________________________________________________________________________
+
+(FLUXO)...
+1º USUÁRIO INFORMA A URL
+2º BROWSER GERA REQUISIÇÃO
+    GET / HTTP /1.1
+    HOST: www.google.com.br
+3º SERVIDOR WEB GERA A RESPOSTA
+    HTTP/1.1 200 OK
+    CONTENT-TYPE: TEXT/HTML; CHARSET=UTF-8
+    DATE: MON, 30 ABRIL 2018 17:00:02 GMT
+    CONECTION: CLOSE
+    CONTENT-LENGTH: 438
+<html>...
+4º BROWSER EXIBE A PÁGINA
+____________________________________________________________________________________________________________________
+[ MÉTODOS DO HTTP ]
+- 8 MÉTODOS SUPORTADOS PELO HTTP
+    GET, POST, PUT, DELETE, TRACE, OPTIONS, CONNECT E HEAD
+- REQUISIÇÃO E RESPOSTA
+                                               URL + PARAMS
+    CLIENTE -----------------------------------------------> SERVIDOR
+             HTML, CSS, JS...
+    CLIENTE <----------------------------------------------- SERVIDOR
+____________________________________________________________________________________________________________________
+
+[ REQUISIÇÃO VIA GET]
+(CABEÇALHO)
+/**********************************************************************************
+*        GET /search?q=web+moderno&hl=pt-BR HTTP/1.1                              *
+*        host: www.google.com.br                                                  *
+*        user-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS...                      *
+*        ...                                                                      *
+**********************************************************************************/
+
+[ REQUISIÇÃO VIA POST ]
+(CABEÇALHO)
+/**********************************************************************************
+*        POST /search?q=web+moderno&hl=pt-BR HTTP/1.1                             *
+*        host: www.google.com.br                                                  *
+*        user-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS...                      *
+*        ...                                                                      *
+**********************************************************************************/
+(CORPO)
+/**********************************************************************************
+*        continue=htpps%3A%2F%2Email.google.com%2Fmail%2f&se                      *  
+*        rvice=mail&rm=false&ltmpl=default&scc=1&ss=1&osid=1                      *
+*        &emr=1&f.req=%5B%22fulano%40gmail.com                                    *
+*        ...                                                                      *
+**********************************************************************************/
+____________________________________________________________________________________________________________________
+
+[ GRUPOS DE STATUS HTTP ]
+
+* 1XX - INFORMAÇÃO
+* 2XX - SUCESSO
+* 3XX - REDIRECIONAMENTO
+* 4XX - ERRO NO CL
+* 5XX - ERRO NO SERVIDOR
+____________________________________________________________________________________________________________________

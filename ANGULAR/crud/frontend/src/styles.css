@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.red {
+    color: #e35e6b;
+}
+
+.v-middle {
+    vertical-align: middle;
+}
+
+.msg-success .mdc-snackbar__surface::before  {
+    background-color: #28a745 !important;
+    z-index: -99999;
+}
+
+.msg-success .mdc-snackbar__surface::after {
+    color: #fff !important;
+    z-index: 9999;
+}
+
+.msg-error .mdc-snackbar__surface::before  {
+    background-color: #e35e6b !important;
+    z-index: -99999;
+}
+
+.msg-error .mdc-snackbar__surface::after {
+    color: #fff !important;
+    z-index: 9999;
+}

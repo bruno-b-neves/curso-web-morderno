@@ -1,0 +1,29 @@
+{
+  "name": "capitulo-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack",
+    "serve": "webpack serve --open",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "5.1.5",
+    "css-loader": "0.28.11",
+    "file-loader": "1.1.11",
+    "mini-css-extract-plugin": "^2.7.5",
+    "node-sass": "8.0.0",
+    "optimize-css-assets-webpack-plugin": "4.0.1",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "terser-webpack-plugin": "4.2.3",
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.0"
+  }
+}

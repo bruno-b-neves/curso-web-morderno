@@ -1,0 +1,35 @@
+/*!*******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/assets/css/estilo.css ***!
+  \*******************************************************************************************************************/
+* {
+  box-sizing: border-box; }
+
+body {
+  width: auto;
+  height: auto;
+  background-color: #444;
+  background-image: url(320fcf9d2119a44735ec2e4e721c38a9.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh; }
+
+/*!********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/assets/scss/index.scss ***!
+  \********************************************************************************************************************/
+.botao {
+  background-color: #19b3e6;
+  color: #fff;
+  font-size: 1.8em;
+  border: 1px solid #19b3e6;
+  border-radius: 8px;
+  padding: 50px 50px;
+  box-shadow: 4px 4px 4px #323232;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.085rem;
+  justify-content: center;
+  display: block;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto; }
+

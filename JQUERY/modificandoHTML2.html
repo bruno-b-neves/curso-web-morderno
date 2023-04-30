@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Modificando HTML #02</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <script src='js/jquery.js'></script>
+</head>
+
+<body class='conteudo exercicio'>
+    <h1>Modificando HTML #02</h1>
+    <div id='div1'>1</div>
+    <div id='div2'>2</div>
+    <div id='div3'>3</div>
+    <p class='numero'>4</p>
+    <p class='numero'>5</p>
+
+    <script>
+        // Adicionar Primeiro - .prepend() | Adicionar por último - .append()
+        $('#div1').append(', 2')
+        $('#div1').prepend('0, ')
+
+        // .appendTo() e .prependTo() invertem a ordem
+        $('<span>, 3</span>').appendTo('#div1')
+        $('<span>-1, </span>').prependTo('#div1')
+
+        // .before() - fica fora antes do elemento | .after() - fica fora depois do elemento
+        $('#div2').before('<p>Antes 2</p>')
+        $('#div2').after('<p>Depois 2</p>')
+
+        $('<p>Antes 3</p>').insertBefore('#div3')        
+        $('<p>Depois 3</p>').insertAfter('#div3')
+        
+        // .wrap() - adiciona aquele elemento dentro de outro elemento
+        // .wrapAll() - pega tudo que ele selecionou e faz com seja um unico elemento
+        // $('p.numero').wrap('<div>')
+        $('p.numero').wrapAll('<div id="div4">')
+        
+        // .empty() - limpa todo o conteúdo (a div ainda existe, só o que estava dentro foi removido)
+        $('#div4').empty()
+        
+        // .prev() - volta para o anterior | .remove() - remove os elementos que foram passados
+        $('#div3, #div4').prev().remove()
+
+        // .repleaceAll() && .repleaceWith() -  - Substitui o elemento que foi passado.
+        // $('<div>Substituto</div>').replaceAll('body > p')
+        // $('body > p').replaceWith('<div>Substituto</div>')
+
+        // .repleaceWith() tem uma outra função que é receber uma Callback
+        $('body > p').replaceWith(function () {
+            return $('<div>').html($(this).html()).append('!!!!!').css('color', '#353535')
+        })
+
+
+    </script>
+</body>

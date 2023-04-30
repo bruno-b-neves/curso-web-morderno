@@ -1,0 +1,29 @@
+db.estados.insert([
+    { 
+        _id: ObjectId("64198f3c38b2c502314bcd19"), 
+        nome: "SAO PAULO", 
+        sigla: "SP", 
+        regiao: "SUDESTE", 
+        cidades: [ 
+            { 
+                _id: ObjectId("64198f3c38b2c502314bcd1a"), 
+                nome: "CAMPINAS", 
+                area: 795.7, 
+                prefeito: "JONAS DONIZETE", 
+                populacao: 1081000 
+            },
+            {
+			    _id: ObjectId("64198f3c38b2c502314bcd1b"),
+			    nome: "Guarulhos",
+			    prefeito: "",
+			    populacao: 1325000
+		    },
+            {
+			    _id: ObjectId("64198f3c38b2c502314bcd1c"),
+			    nome: "Sorocaba",
+			    distanciaCapital: 87,
+			    populacao: 644919
+		    }
+        ]
+    }
+])

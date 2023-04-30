@@ -1,0 +1,30 @@
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin-right: 10px;
+    display: block;
+    width: 25%;
+}
+
+.card-form {
+    width: 75%;
+    padding: 25px 25px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.display-buttons {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px 0px;
+}

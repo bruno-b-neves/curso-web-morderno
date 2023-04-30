@@ -1,0 +1,29 @@
+*-- CONSULTAR O DB
+db.estados.find()
+
+*-- CONSULTAR O DB NO FORMATO MAIS FÁCIL DE SER LIDO
+db.estados.find().pretty()
+
+*-- CONSULTAR O DB NO UNICO REGISTRO | ESSE TIPO DE CONSULTA PODE RECEBER PARAMETROS | E AINDA PODE USAR O .pretty()
+db.estados.findOne()    |   db.estados.findOne({parametro})     |   db.estados.findOne({parametro}).pretty()
+
+*-- CONSULTA DB POR OPERADORES
+db.estados.find({$and: [ {sigla: "RJ"}, {sigla: "AC"}]}).pretty()
+
+*-- CONSULTAR DB E VERIFICAR SE O REGISTRO ESTA CONTIDO OU NÃO
+db.estados.find({populacao: {$exists: true}})
+
+*-- CONSULTAR DB PULANDO UMA QUANTIDADE DE VALOR PASSADO NO PARAMETRO
+db.estados.find().skip(1)
+
+*-- CONSULTAR NA DB PULANDO UMA QUANTIDADE DE VALOR PASSADO NO PARAMETRO E LIMITAR PARA PASSAR UM NUM DE REGISTROS
+db.estados.find().skip(1).limit(2)
+
+*-- CONSULTAR QUANTOS REGISTRO TEM DENTRO DA COLEÇÃO
+db.estados.count()
+
+*-- CONSULTA NA DB POR FILTRAGEM DE DADOS (PARA NÃO TRAZER TODOS OS DADOS)
+db.estados.find({sigla: "SP"}, {nome: 1, sigla: 1, _id: 0})
+db.estados.find({sigla: "SP"}, {"cidades.nome": 1, _id: 0})
+
+

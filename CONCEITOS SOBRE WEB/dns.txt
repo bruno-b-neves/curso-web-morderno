@@ -1,0 +1,19 @@
+[ SERVIDOR DNS ]
+- TRADUZ OS NOMES DE DOMÍNIO EM ENDEREÇO DE IP 
+* www.dominio.com.br --> 54.69.61.89 *
+_________________________________________________________________________________________________
+
+[ FUNCIONAMENTO BÁSICO DO DNS ]
+- 1º USUÁRIO INFORMA O ENDEREÇO NO BROWSER
+- 2º COMPUTADOR ENVIA UMA CONSULTA DNS PARA O SERVIDOR LOCAL
+- 3º O SERVIDOR RESPONDE COM O ENDEREÇO DE IP
+- 4º COMPUTADOR ACESSA O SERVIDOR A PARTIR DO IP OBTIDO
+_________________________________________________________________________________________________
+
+[ DNS RECORDS ]
+* A - IPv4
+* AAAA - IPv6
+* MX - SERVIDOR DE EMAIL
+* NS - SERVIDOR DNS
+* CNAME - CANONICAL NAME (APELIDO)
+_________________________________________________________________________________________________

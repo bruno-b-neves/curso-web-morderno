@@ -1,0 +1,17 @@
+.botao {
+    background-color: $cor-bg-botao-padrao;
+    color: $cor-botao-padrao;
+    font-size: 1.8em;
+    border: 1px solid $cor-bg-botao-padrao;
+    border-radius: 8px;
+    padding: 50px 50px;
+    box-shadow: 4px 4px 4px #323232;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.085rem;
+    justify-content: center;
+    display: block;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
