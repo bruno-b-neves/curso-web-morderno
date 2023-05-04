@@ -34,10 +34,10 @@ module.exports = app => {
                 .where({ parentId: req.params.id})
             notExistsOrError(subcategory, 'Categoria possui subcategorias')
             
-          /*   const articles = await app.db('articles')
-                .where({categoryId:req.params.id })
+            const articles = await app.db('articles')
+                .where({categoryId: req.params.id })
             notExistsOrError(articles,'Categoria possui artigos.')
-        */
+        
             const rowsDeleted = await app.db('categories')
                 .where({id:req.params.id }).del()
             existsOrError(rowsDeleted,'Categoria não foi encontrada.')
