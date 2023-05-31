@@ -1,8 +1,5 @@
 <template>
-    <aside class="menu" v-show="isMenuVisible">
-        <span class="text-white d-flex justify-content-center mt-3 text-uppercase" style="font-size: 1.150rem;">Menu Toggle</span>
-        <hr style="border: 1px solid rgba(255,255,255, .06); width: 100%;">
-    </aside>
+    <aside class="menu" v-show="isMenuVisible"></aside>
 </template>
 
 <script>
